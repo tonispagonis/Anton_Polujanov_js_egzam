@@ -1,3 +1,5 @@
+'use strict';
+console.log('Task 7');
 /* ------------------------------ TASK 7 -----------------------------------
 Turimas "audi" objektas.
 
@@ -10,3 +12,9 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+
+function showObjectKeys() {
+  console.log(Object.keys(audi));
+}
+showObjectKeys();
+
