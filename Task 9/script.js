@@ -20,13 +20,17 @@ class Movie {
     // Method
     wasExpensive() {
         if (this.budget > 100000000) {
-            console.log(`${this.title} by ${this.director} is considered expensive because it cost $${this.budget} to make it`);
+            return true;
+        } else {
+            return false;
         }
     }
 }    
 
 // Example
-const movie1 = new Movie('The Exuberant Movie', 'Art Vandelay', 101000000);
+// Values
+const movie1 = new Movie('Old Town Horse', 'Pamela Lee Anderson', 101000000);
 console.log('movie1 ===', movie1);
 
-movie1.wasExpensive();
+// Invoking method function
+console.log('wasExpensive? ===', movie1.wasExpensive());
