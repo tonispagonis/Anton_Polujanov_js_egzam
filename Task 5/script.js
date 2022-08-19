@@ -24,8 +24,8 @@ const users = [
 
 // 1. "filterDogOwners"
 const filterDogOwners = users.filter(users => users.hasDog === true);
-console.log(filterDogOwners);
+console.log('Dog owners ===', filterDogOwners);
 
 // 2. "filterAdults"
 const filterAdults = users.filter(users => users.age >= 18);
-console.log(filterAdults);
+console.log('Adults ===', filterAdults);
